@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/walet.png" type="image/x-icon">
+    <!-- Tailwind CSS File Start -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ||Tailwind CSS File End|| -->
+    <title>Baap-Er-Bank</title>
+</head>
+
+<body>
+    <main class="container mx-auto lg:h-screen grid grid-rows-1 items-center">
+        <div class="mx-auto w-full bg-green-100 lg:p-20 md:p-10 p-6 lg:rounded-2xl">
+            <h1 class="text-center uppercase text-4xl font-bold text-lime-900 pb-12">Baap-Er-<span
+                    class="text-red-700">Bank</span>!!!
+            </h1>
+
+            <section class="text-white text-2xl md:text-3xl font-semibold capitalize">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-slate-700 md:p-10 p-4 rounded-lg">
+                        <h4>Deposit</h4>
+                        <h6 class="pt-2">$ <span id="deposit_total">00</span></h6>
+                    </div>
+                    <div class="bg-gray-700 md:p-10 p-4 rounded-lg">
+                        <h4>wathdraw</h4>
+                        <h6 class="pt-2">$ <span id="withdraw_total">00</span></h6>
+                    </div>
+                    <div class="bg-cyan-800 md:p-10 p-4  rounded-lg col-span-2 lg:col-span-1">
+                        <h4>balance</h4>
+                        <h6 class="pt-2">$ <span id="balance_total">1000</span></h6>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-8 text-lg">
+                    <div class="bg-emerald-500 md:p-10 p-6 rounded-lg">
+                        <h4>your Deposit</h4>
+                        <input id="deposit_field" class="w-full px-4 py-2 my-4 rounded text-black" type="text"
+                            placeholder="$ Amount  you want to deposit">
+                        <br>
+                        <button id="deposit_btn"
+                            class="bg-slate-800 py-2 w-full font-bold uppercase rounded-lg hover:bg-slate-700">Deposit</button>
+                    </div>
+                    <div class="bg-red-400 md:p-10 p-6 rounded-lg">
+                        <h4>Your Withdraw</h4>
+                        <input id="withdrow_field" class="w-full px-4 py-2 my-4 rounded text-black" type="text"
+                            placeholder="$ Amount  you want to deposit">
+                        <br>
+                        <button id="withdrow_btn"
+                            class="bg-slate-800 py-2 w-full font-bold uppercase rounded-lg hover:bg-slate-700">Withdraw</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="assets/js/dom.js"></script>
+</body>
+
+</html>
